@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Comentarios*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1d0bd ;
+    color: #f1d0bd;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**no solo me permite eliminar la barra de abajo sino que tambien nos permite agregar mas cositas*/
+header {
+    display: flex;
+    background-color: #4E3629
+}
+header nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #f1d0bd ;
+    list-style: none;
+    margin-right: 60px;
+    border-radius: 5px;
+    padding: 10px;
+}
+header nav .container-fluid .navbar-nav{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #f1d0bd;
+
+}
+.img-logo{
+    display: flexbox;
+}
+/*!----MAIN---*/
+.hero {
+    text-align: center;
+    height: 750px;
+    background-position: center;
+    background-image: url("../img/portada.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f1d0bd;
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-family:'Times New Roman', Times, serif;
+}
+.hero h2{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero h3{
+    font-size: 25px;
+    border-color: #333;
+    border-radius: 20px;
+}
+
+.ero h2 {
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 50px;
+    color: #4E3629 !important;
+    display: flex;
+}
+
+
+/*!----Tarjetas de Inicio---*/
+.tarjeta {
+    background-color: #b6734f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.tarjeta-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjet-body {
+    padding: 20px
+}
+
+.tarjet-tittle {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.tarjet-text {
+    font-size: 16px;
+    color: #272525;
+    margin-bottom: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/*!----CERVEZAS---*/
+.cerve{
+    display: grid;
+    margin-top: 40px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.cerve img {
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+    margin: 15px;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.grid-item{
+    
+
+
+}
+
+.img1:hover {
+    transform: translateY(-10px);
+}
+
+.vezas {
+    text-align: center;
+    color: #4E3629;
+}
+.vezas h1{
+    font-family:'Times New Roman', Times, serif;
+}
+.vezas h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.vezas h1 {
+    font-size: 80px;
+}
+
+.vezas div img {
+    width: 850px;
+    height: 450px;
+    margin: 25px;
+}
+.barril{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+}
+.barril img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.redes a img {
+    width: 50px;
+    height: 50px;
+    margin: 2%;
+    display: inline;
+}
+
+header a img {
+    width: 200px;
+    height: 200px;
+}
+
+/**box sizzing - border box*/
+/*!----Servicios---*/
+.serv-hero{
+    font-size: 80px;
+    text-align: center;
+    color: #4E3629;
+}
+.serv-hero h1{
+    font-size: 80px;
+    font-family:'Times New Roman', Times, serif;
+}
+.serv-hero h2{
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+}
+.butt-serv{
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        background-color: #b6734f;
+        border:none;
+        border-radius: 50px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+}
+.butt-serv:hover{
+    background-color: #4E3629;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+/*!----FOOTER---*/
+footer {
+    background-color: #4E3629;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+
+}
